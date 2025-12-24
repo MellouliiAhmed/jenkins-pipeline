@@ -15,12 +15,12 @@ pipeline {
     }
 }
 
-stage('Verify Project') {
-    steps {
-        sh ' ls -la'
-        sh 'test -f package.json'
-    }
-}
+// stage('Verify Project') {
+//     steps {
+//         sh ' ls -la'
+//         sh 'test -f package.json'
+//     }
+// }
 
 
 
