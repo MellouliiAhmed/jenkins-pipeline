@@ -17,7 +17,7 @@ pipeline {
 
 stage('Verify Project') {
     steps {
-        sh 'cd hello-app && ls -la'
+        sh ' ls -la'
         sh 'test -f package.json'
     }
 }
@@ -26,7 +26,7 @@ stage('Verify Project') {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh 'cd hello-app && npm install'
             }
         }
 
