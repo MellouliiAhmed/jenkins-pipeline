@@ -17,7 +17,7 @@ pipeline {
 
 stage('Verify Project') {
     steps {
-        sh 'ls -la'
+        sh 'cd hello-app && ls -la'
         sh 'test -f package.json'
     }
 }
