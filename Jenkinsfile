@@ -9,10 +9,12 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
+    steps {
+        git branch: 'master',
+            url: 'https://github.com/MellouliiAhmed/jenkins-pipeline.git'
+    }
+}
+
 
         stage('Install Dependencies') {
             steps {
